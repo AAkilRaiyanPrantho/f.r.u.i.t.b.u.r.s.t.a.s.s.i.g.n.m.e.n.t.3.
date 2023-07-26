@@ -1,204 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Burst</title>
-
-    <!-- DaisyUI Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Styles -->
-    <style>
-      .lato {
-        font-family: "Lato", sans-serif;
-      }
-    </style>
-    <!-- Custom Colors -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-              'fruit-primary' : '#F85559',
-              'gradient-one' : 'rgba(18, 18, 18, 0.8)',
-              'gradient-two' : 'rgba(18, 18, 18, 0.00)',
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fruit Burst</title>
+    
+        <!-- DaisyUI Link -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- Styles -->
+        <style>
+          .lato {
+            font-family: "Lato", sans-serif;
+          }
+        </style>
+        <!-- Custom Colors -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  clifford: '#da373d',
+                  'fruit-primary' : '#F85559',
+                  'gradient-one' : 'rgba(18, 18, 18, 0.8)',
+                  'gradient-two' : 'rgba(18, 18, 18, 0.00)',
+                }
+              }
             }
           }
-        }
-      }
-    </script>
-  </head>
-
-  <body class="lato">
-    <header class="lg:px-60">
-      <!-- Navigation Section -->
-      <nav class="flex bg-base-100 justify-between px-5  lg:bg-fruit-primary my-12 rounded-full">
-        <div class="navbar">
-            <div class="lg:flex-1 text-white font-medium ">
-                <ul class="hidden lg:flex items-center gap-8">
-                    <a >
-                        <li>Home</li>
-                    </a>
-                    <a>
-                        <li>About Us</li>
-                    </a>
-                    <a>
-                        <li>Shop</li>
-                    </a>
-                    <a>
-                        <li>All Fruits</li>
-                    </a>
-                </ul>
-            </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2 text-3xl font-bold">
-              <img src="images/logo.png" alt="" />
-              <h1 class="text-black lg:text-white">Fruit Burst</h1>
-            </div>
-          </div>
-          <div class="hidden lg:flex items-end px-2 relative">
-            <div class="rounded-box flex items-center">
-              <div><input
-                type="text"
-                placeholder="Search here...."
-                class="input w-24 md:w-auto lg:w-80 rounded-full"
-              /></div>
-              <div class="lg: absolute end-4">
-                <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-             </div>
+        </script>
+      </head>
+<body class="px-60">
+    <header>
+        <nav class="flex bg-base-100 justify-between px-5  lg:bg-fruit-primary my-12 rounded-full">
+            <div class="navbar">
+                <div class="lg:flex-1 text-white font-medium ">
+                    <ul class="hidden lg:flex items-center gap-8">
+                        <a >
+                            <li>Home</li>
+                        </a>
+                        <a>
+                            <li>About Us</li>
+                        </a>
+                        <a>
+                            <li>Shop</li>
+                        </a>
+                        <a>
+                            <li>All Fruits</li>
+                        </a>
+                    </ul>
+                </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 text-3xl font-bold">
+                  <img src="images/logo.png" alt="" />
+                  <h1 class="text-black lg:text-white">Fruit Burst</h1>
+                </div>
               </div>
-          </div>
-          <div class="flex-none lg:hidden">
-            <div class="dropdown dropdown-left">
-                <label tabindex="0" class="btn m-1">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="inline-block w-5 h-5 stroke-current"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    ></path>
-                  </svg>
-                </label>
-                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                  <li><input
+              <div class="hidden lg:flex items-end px-2 relative">
+                <div class="rounded-box flex items-center">
+                  <div><input
                     type="text"
                     placeholder="Search here...."
-                    class="input w-3/4"></li>
-                </ul>
-                </ul>
+                    class="input w-24 md:w-auto lg:w-80 rounded-full"
+                  /></div>
+                  <div class="lg: absolute end-4">
+                    <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                 </div>
+                  </div>
               </div>
-          </div>
-        </div>
-      </nav>
-      <!-- Banner Section -->
-      <section>
-        <div class="carousel w-full lg:relative">
-          <!-- Slide 1 -->
-          <div id="slide1" class="carousel-item relative md:w-screen lg:w-full">
-            <!-- <img src="images/banner1.png" alt="" class="w-full"> -->
-             <div class="hero rounded-lg md:bg-auto lg:bg-cover" style="background-image: url(images/banner1.png);">
-              <div class="hero-overlay bg-gradient-to-b from-gradient-one to-gradient-two rounded-lg"></div>
-              <div class="hero-content text-center text-neutral-content md:p-0 lg:pb-36">
-                <div class="md:w-full py-0 lg:max-w-2xl py-24">
-                  <h1 class="md:mb-1 lg:mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
-                  <p class="md:mb-1 lg:mb-5 text-xl font-medium">We supply highly quality organic products</p>
-                  <button class="btn btn-error bg-[#F85559] text-white">Shop Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" class="btn btn-circle btn-neutral">❮</a> 
-              <a href="#slide2" class="btn btn-circle btn-neutral">❯</a>
-            </div>
-          </div> 
-          <!-- Slide 2 -->
-          <div id="slide2" class="carousel-item relative md:w-screen lg:w-full">
-            <!-- <img src="images/banner2.png" alt="" class="w-full"> -->
-            <div class="hero rounded-lg md:bg-auto lg:bg-cover" style="background-image: url(images/banner2.png);">
-              <div class="hero-overlay bg-gradient-to-b from-gradient-one to-gradient-two rounded-lg"></div>
-              <div class="hero-content text-center text-neutral-content md:p-0 lg:pb-36">
-                <div class="md:w-full py-0 lg:max-w-2xl py-24">
-                  <h1 class="md:mb-1 lg:mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
-                  <p class="md:mb-1 lg:mb-5 text-xl font-medium">We supply highly quality organic products</p>
-                  <button class="btn btn-error bg-[#F85559] text-white">Shop Now</button>
-                </div>
-              </div>
-            </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle btn-neutral">❮</a> 
-              <a href="#slide3" class="btn btn-circle btn-neutral">❯</a>
-            </div>
-          </div> 
-          <!-- Slide 3 -->
-          <div id="slide3" class="carousel-item relative md:w-screen lg:w-full">
-            <!-- <img src="images/banner3.png" alt="" class="w-full"> -->
-            <div class="hero rounded-lg md:bg-auto lg:bg-cover" style="background-image: url(images/banner3.png);">
-              <div class="hero-overlay bg-gradient-to-b from-gradient-one to-gradient-two rounded-lg"></div>
-              <div class="hero-content text-center text-neutral-content md:p-0 lg:pb-36">
-                <div class="md:w-full py-0 lg:max-w-2xl py-24">
-                  <h1 class="md:mb-1 lg:mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
-                  <p class="md:mb-1 lg:mb-5 text-xl font-medium">We supply highly quality organic products</p>
-                  <button class="btn btn-error bg-[#F85559] text-white">Shop Now</button>
-                </div>
+              <div class="flex-none lg:hidden">
+                <div class="dropdown dropdown-left">
+                    <label tabindex="0" class="btn m-1">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block w-5 h-5 stroke-current"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                      </svg>
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                      <li><input
+                        type="text"
+                        placeholder="Search here...."
+                        class="input w-3/4"></li>
+                    </ul>
+                    </ul>
+                  </div>
               </div>
             </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle btn-neutral">❮</a> 
-              <a href="#slide4" class="btn btn-circle btn-neutral">❯</a>
-            </div>
-          </div>
-          <!-- Slide 4 --> 
-          <div id="slide4" class="carousel-item relative md:w-screen lg:w-full">
-            <!-- <img src="images/banner4.png" alt="" class="w-full"> -->
-            <div class="hero rounded-lg md:bg-auto lg:bg-cover" style="background-image: url(images/banner4.png);">
-              <div class="hero-overlay bg-gradient-to-b from-gradient-one to-gradient-two rounded-lg"></div>
-              <div class="hero-content text-center text-neutral-content md:p-0 lg:pb-36">
-                <div class="md:w-full py-0 lg:max-w-2xl py-24">
-                  <h1 class="md:mb-1 lg:mb-5 text-7xl font-extrabold">Exotic tastes at your doorstep</h1>
-                  <p class="md:mb-1 lg:mb-5 text-xl font-medium">We supply highly quality organic products</p>
-                  <button class="btn btn-error bg-[#F85559] text-white">Shop Now</button>
-                </div>
+          </nav>
+    
+    
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
-            </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle btn-neutral">❮</a> 
-              <a href="#slide1" class="btn btn-circle btn-neutral">❯</a>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          
-        </div>
-      </section>
     </header>
     <main></main>
     <footer
@@ -378,5 +328,5 @@
         </div>
       </div>
     </footer>
-  </body>
+</body>
 </html>
