@@ -283,9 +283,8 @@
       </div>
       <!-- Card Section -->
       <div class="grid grid-cols-1 justify-items-center relative bottom-40 lg:grid grid-cols-1 justify-items-center relative top-4 mt-10">
-        <div class="flex flex-col items-center lg:grid grid-cols-4 gap-3">
+        <div class="flex flex-col items-center w-3/4 lg:grid grid-cols-4  gap-10">
           <!-- card 1 -->
-          <img src="images/fruit6.png" alt="">
           <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure><img src="images/fruit6.png" alt="Apple" /></figure>
             <div class="card-body items-center">
@@ -293,11 +292,11 @@
               <hr class="w-2/4">
               <p>Apple</p>
               <div class="rating">
-                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" checked />
+                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
               </div>
               <!-- Open the modal using ID.showModal() method -->
               <div class="justify-items-center items-center">
@@ -308,11 +307,11 @@
                     <h3 class="font-bold text-lg">Apple</h3>
                     <p class="py-4 px-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     <div class="rating">
-                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" checked />
-                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" checked />
+                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
+                      <input type="radio" name="apple-rating" class="mask mask-star-2 bg-red-400" />
                     </div>
                     <div class="modal-action mx-auto">
                       <!-- if there is a button in form, it will close the modal -->
@@ -326,11 +325,125 @@
             </div>
           </div>
           <!-- card 2 -->
-          <img src="images/fruit7.png" alt="">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img src="images/fruit7.png" alt="Orange" /></figure>
+            <div class="card-body items-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr class="w-2/4">
+              <p>Orange</p>
+              <div class="rating">
+                <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <!-- Open the modal using ID.showModal() method -->
+              <div class="justify-items-center items-center">
+                <button class="btn" onclick="my_modal_6.showModal()">Details</button>
+                <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box card-body items-center">
+                    <img src="images/fruit7.png" alt="orange">
+                    <h3 class="font-bold text-lg">Orange</h3>
+                    <p class="py-4 px-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="orange-rating" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                      <button class="btn bg-fruit-primary text-white">But Now</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+
+            </div>
+          </div>
           <!-- card 3 -->
-          <img src="images/fruit8.png" alt="">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img src="images/fruit8.png" alt="Red Dragon" /></figure>
+            <div class="card-body items-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr class="w-2/4">
+              <p>Red Dragon</p>
+              <div class="rating">
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" checked />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+              </div>
+              <!-- Open the modal using ID.showModal() method -->
+              <div class="justify-items-center items-center">
+                <button class="btn" onclick="my_modal_7.showModal()">Details</button>
+                <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box card-body items-center">
+                    <img src="images/fruit8.png" alt="red-dragon">
+                    <h3 class="font-bold text-lg">Red Dragon</h3>
+                    <p class="py-4 px-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" checked />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                      <input type="radio" name="red-dragon-rating" class="mask mask-star-2 bg-purple-400" />
+                    </div>
+                    <div class="modal-action mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                      <button class="btn bg-fruit-primary text-white">But Now</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+
+            </div>
+          </div>
           <!-- card 4 -->
-          <img src="images/fruit9.png" alt="">
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure><img src="images/fruit9.png" alt="Banana" /></figure>
+            <div class="card-body items-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <hr class="w-2/4">
+              <p>Banana</p>
+              <div class="rating">
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" checked />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+              </div>
+              <!-- Open the modal using ID.showModal() method -->
+              <div class="justify-items-center items-center">
+                <button class="btn" onclick="my_modal_8.showModal()">Details</button>
+                <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box card-body items-center">
+                    <img src="images/fruit9.png" alt="red-dragon">
+                    <h3 class="font-bold text-lg">Banana</h3>
+                    <p class="py-4 px-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" checked />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                      <input type="radio" name="banana-rating" class="mask mask-star-2 bg-yellow-400" />
+                    </div>
+                    <div class="modal-action mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close</button>
+                      <button class="btn bg-fruit-primary text-white">But Now</button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+
+            </div>
+          </div>
         </div>
         <div>
           <button class="btn btn-error bg-[#F85559] text-white my-10">Shop All</button>
