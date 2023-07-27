@@ -7,12 +7,6 @@ module.exports = {
   plugins: [],
 }
 
-//   module.exports = {
-//     daisyui: {
-//       themes: ["cupcake", "dark", "cmyk"],
-//     },
-//   }
-
 
 module.exports = {
 //...
